@@ -74,6 +74,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+#Informações do banco de dados - p heroku
 DATABASES = {
     "default": {
         "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
