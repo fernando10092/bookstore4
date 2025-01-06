@@ -1,16 +1,3 @@
-# Bookstore
-
-Bookstore APP from Backend Python
-
-## Prerequisites
-
-```
-Python 3.5>
-Poetry
-Docker && docker-compose
-
-```
-
 ## Quickstart
 
 1. Clone this project
@@ -38,10 +25,6 @@ Docker && docker-compose
    ```shell
    docker-compose up -d --build 
    docker-compose exec web python manage.py migrate
-   ```
-
-5. Run tests inside of docker:
-
-   ```shell
-   docker-compose exec web python manage.py test
-   ```
+   docker build -t bookstore_new
+   docker run -d -p 5000:5000 --name <nome-do-container> <nome-da-imagem>
+   docker run -d -p 3000:3000 meu-app:1.0
