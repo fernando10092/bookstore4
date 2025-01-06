@@ -73,7 +73,6 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
