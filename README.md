@@ -23,8 +23,18 @@
 4. Run docker dev server environment:
 
    ```shell
+   
+
+   //DOCKER
+   python manage.py makemigrations
+   python manage.py migrate
    docker-compose up -d --build 
-   docker-compose exec web python manage.py migrate
-   docker build -t bookstore_new
-   docker run -d -p 5000:5000 --name <nome-do-container> <nome-da-imagem>
-   docker run -d -p 3000:3000 meu-app:1.0
+
+   //EXCLUIR TODOS DE UMA VEZ
+   docker system prune -a
+   docker image prune
+   docker rmi -f IMAGE_ID
+   docker-compose down
+
+
+   
